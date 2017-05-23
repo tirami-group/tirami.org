@@ -470,6 +470,9 @@ p {
 a {
   color: inherit; }
 
+figure {
+  text-align: center; }
+
 ::selection {
   background-color: #dedede; }
 
