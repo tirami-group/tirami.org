@@ -1,0 +1,19 @@
+@media (max-width: 960px) {
+  p {
+    text-align: start; 
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .main {
+    width: 95%;
+  }
+
+  .container {
+    .oneforth, .half, .threeforths, .full {
+      flex-basis:  100%;
+    }
+  }
+}

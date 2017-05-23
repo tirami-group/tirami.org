@@ -8,10 +8,9 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="container">
-  <header class="hero">
-      <h1 class="hero-title">Tirami</h1>
-      <p class="hero-description">We Love Tiramisu</p>
+  <header class="hero container">
+      <h1 class="hero-title full">Tirami</h1>
+      <p class="hero-description full">We Love Tiramisu</p>
   </header>
   <main class="main">
     <section class="about">
@@ -22,7 +21,7 @@
     </section>
     <section class="projects">
       <h2>Projects</h2>
-      <div class="project">
+      <div class="container">
         <div class="oneforth">
           <h3><a href="#">ReNote</a></h3>
           <img src="http://placehold.it/200x130" alt="ReNote">
@@ -34,30 +33,27 @@
     </section>
     <section class="contact">
       <h2>Contact</h2>
-      <div>
         <form action="https://formspree.io/contact@tirami.org" method="POST">
-          <div class="form">
+          <div class="container">
             <div class="half">
-              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="name" placeholder="Name" required>
             </div>
             <div class="half">
-              <input type="email" name="email" placeholder="Email">
+              <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="full">
-              <input type="text" name="_subject" placeholder="Subject">
+              <input type="text" name="_subject" placeholder="Subject" required>
             </div>
             <div class="full">
-              <textarea name="message" placeholder="Message"></textarea>
+              <textarea name="message" placeholder="Message" required></textarea>
             </div>
             <div class="oneforth">
               <input type="submit" value="Send">
             </div>
           </div>
         </form>
-      </div>
     </section>
   </main>
-  </div>
   <footer class="footer">
     &copy; 2017, Tirami Group.
   </footer>

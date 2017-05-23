@@ -1,3 +1,5 @@
+@import 'container.scss';
+
 body {
   font: {
     family: 'Raleway', sans-serif;
@@ -13,10 +15,11 @@ a {
   color: inherit;
 }
 
+::selection {
+  background-color: #dedede;
+}
+
 .hero {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   align-content: center;
   height: 600px;
@@ -41,38 +44,16 @@ a {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .form, .project {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    input, textarea {
-      width: 100%;
-      padding: 0.5em;
-      margin: 0.3em 0;
-    }
-
-    textarea {
-      height: 10em;
-    }
-
-    .oneforth {
-      flex-basis: 23%
-    }
-
-    .half {
-      flex-basis: 47%;
-    }
-
-    .threeforths {
-      flex-basis: 73%;
-    }
-
-    .full {
-      flex-basis:  100%;
-    }
+  input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.3em 0;
   }
+
+  textarea {
+    height: 10em;
+  }
+
 }
 
 .footer {
@@ -81,3 +62,5 @@ a {
   padding: 1em 0;
   background-color: #eeeeee;
 }
+
+@import 'mobile.scss';
