@@ -1,0 +1,35 @@
+{
+  "name": "tirami.org",
+  "version": "1.0.0",
+  "description": "homepage for tirami group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -w",
+    "dist": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tirami-group/tirami.org.git"
+  },
+  "keywords": [
+    "company"
+  ],
+  "author": "tirami group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tirami-group/tirami.org/issues"
+  },
+  "homepage": "https://github.com/tirami-group/tirami.org#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.0",
+    "webpack": "^2.6.0"
+  }
+}
