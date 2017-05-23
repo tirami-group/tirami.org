@@ -470,6 +470,9 @@ p {
 a {
   color: inherit; }
 
+input, textarea {
+  box-sizing: border-box; }
+
 ::selection {
   background-color: #dedede; }
 
@@ -504,11 +507,12 @@ a {
   background-color: #eeeeee; }
 
 @media (max-width: 960px) {
-  p {
-    text-align: start; }
+  body {
+    font-size: 14px; }
   .hero {
     height: 300px; }
   .main {
-    width: 95%; }
+    width: 95%;
+    margin: 0 auto; }
   .container .oneforth, .container .half, .container .threeforths, .container .full {
     flex-basis: 100%; } }

@@ -1,6 +1,6 @@
 @media (max-width: 960px) {
-  p {
-    text-align: start; 
+  body {
+    font-size: 14px; 
   }
 
   .hero {
@@ -9,6 +9,7 @@
 
   .main {
     width: 95%;
+    margin: 0 auto;
   }
 
   .container {
