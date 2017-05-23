@@ -12,7 +12,10 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loader: 'babel-loader',
-      exclude: '/node_modules/'
+      exclude: '/node_modules/',
+      query: {
+                presets: ["es2015"]
+      }
     }, {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract('css-loader!sass-loader')
@@ -25,6 +28,11 @@ module.exports = {
     new ExtractTextPlugin({
       filename: 'static/style.css',
       allChunks: true
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
     })
   ]
 }
