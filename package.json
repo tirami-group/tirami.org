@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -w",
-    "dist": "webpack -p",
+    "dev": "webpack -w && hugo serve",
     "build": "webpack -p && hugo"
   },
   "repository": {
