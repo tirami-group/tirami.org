@@ -470,9 +470,6 @@ p {
 a {
   color: inherit; }
 
-input, textarea {
-  box-sizing: border-box; }
-
 ::selection {
   background-color: #dedede; }
 
@@ -487,6 +484,23 @@ input, textarea {
   .hero .hero-title {
     font-size: 4em; }
 
+.nav-links {
+  text-align: center;
+  color: #777; }
+  .nav-links a {
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+  .nav-links a:hover {
+    color: #aaa; }
+  .nav-links ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto; }
+  .nav-links li {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em; }
+
 .main {
   width: 960px;
   margin: 0 auto; }
@@ -494,11 +508,19 @@ input, textarea {
     margin: 2em auto;
     border-top: 1px solid rgba(0, 0, 0, 0.1); }
   .main input, .main textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 0.5em;
     margin: 0.3em 0; }
   .main textarea {
     height: 10em; }
+  .main .button {
+    background-color: #eee;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer; }
+  .main .button:hover {
+    background-color: #ddd; }
 
 .footer {
   text-align: center;

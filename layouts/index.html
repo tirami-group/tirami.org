@@ -8,18 +8,27 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header class="hero container">
+  <header class="header">
+    <div class="hero container">
       <h1 class="hero-title full">Tirami</h1>
       <p class="hero-description full">We Love Tiramisu</p>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="main">
-    <section class="about">
+    <section class="about" id="about">
       <h2>About Us</h2>
       <p class="description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nisl sed nisi varius, id convallis ipsum scelerisque. Phasellus pellentesque, nisi quis tincidunt mattis, sem sapien hendrerit nisl, et egestas purus tortor sed tortor. Nam quam erat, semper sit amet laoreet eu, aliquam sit amet ipsum. Sed lectus arcu, tempor ut vulputate eget, dapibus sit amet neque. Morbi lobortis, libero in eleifend faucibus, metus nibh iaculis sem, eget facilisis magna tellus nec turpis. Maecenas et aliquet sapien, eu elementum dolor. Sed aliquet purus neque, ac volutpat orci viverra sit amet.
       </p>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>Projects</h2>
       <div class="container">
         <div class="oneforth">
@@ -31,7 +40,7 @@
         </p>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact</h2>
         <form action="https://formspree.io/contact@tirami.org" method="POST">
           <div class="container">
@@ -48,7 +57,7 @@
               <textarea name="message" placeholder="Message" required></textarea>
             </div>
             <div class="oneforth">
-              <input type="submit" value="Send">
+              <input class="button" type="submit" value="Send">
             </div>
           </div>
         </form>
@@ -57,5 +66,6 @@
   <footer class="footer">
     &copy; 2017, Tirami Group.
   </footer>
+  <script src="/bundle.js"></script>
 </body>
 </html>

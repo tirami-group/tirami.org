@@ -15,10 +15,6 @@ a {
   color: inherit;
 }
 
-input, textarea {
-  box-sizing: border-box;
-}
-
 ::selection {
   background-color: #dedede;
 }
@@ -39,6 +35,32 @@ input, textarea {
   }
 }
 
+.nav-links {
+  text-align: center;
+  color: #777;
+
+  a {
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  a:hover {
+    color: #aaa; 
+  }
+
+  ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  li {
+    display: inline-block; 
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
 .main {
   width: 960px;
   margin: 0 auto;
@@ -49,6 +71,7 @@ input, textarea {
   }
 
   input, textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 0.5em;
     margin: 0.3em 0;
@@ -58,6 +81,16 @@ input, textarea {
     height: 10em;
   }
 
+  .button {
+    background-color: #eee;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #ddd;
+  }
 }
 
 .footer {
